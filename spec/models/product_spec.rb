@@ -1,7 +1,6 @@
 require 'rails_helper'
 
 RSpec.describe Product, type: :model do
-
   describe 'A valid instance' do
     before(:each) do
       @product = Product.new
@@ -30,5 +29,4 @@ RSpec.describe Product, type: :model do
       expect(@product.errors.messages).to include(:ean)
     end
   end
-
 end
