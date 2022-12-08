@@ -10,6 +10,7 @@ RSpec.describe Product, type: :model do
       @product.name = 'blabla'
     end
     it 'is valid with valid attributes' do
+      expect(@product).to be_a_new(Product)
       expect(@product).to be_valid
     end
   end
