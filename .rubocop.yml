@@ -1,0 +1,15 @@
+AllCops:
+  NewCops: enable
+  Exclude:
+    - bin/**/*
+
+Metrics/BlockLength:
+  Enabled: true
+  Exclude: 
+    - spec/**/*
+
+Style/Documentation:
+  Enabled: true
+  Exclude: 
+    - db/migrate/*
+    - config/application.rb
